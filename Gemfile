@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gem 'jekyll'
 gem 'pygments'
-# gem 'redcarpet'
+gem 'redcarpet'
 
 # jekyll plugins
 # gem 'jekyll-feed'
