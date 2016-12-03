@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
 gem 'jekyll'
+gem 'pygments'
 # gem 'redcarpet'
 
 # jekyll plugins
