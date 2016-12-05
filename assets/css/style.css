@@ -22,6 +22,10 @@ body {
     font: 1.10em 'Helvetica Neue',Helvetica,Verdana,sans-serif;
 }
 
+.wrapper {
+  margin: 0 auto;
+}
+
 .mid {
     position: relative;
     vertical-align: middle;
