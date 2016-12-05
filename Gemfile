@@ -4,8 +4,8 @@ gem 'jekyll'
 gem 'redcarpet'
 
 # jekyll plugins
-# gem 'jekyll-feed'
-# gem 'jekyll-gist'
-# gem 'jekyll-paginate'
-# gem 'jekyll-sitemap'
-# gem 'jekyll-seo-tag'
+gem 'jekyll-feed'
+gem 'jekyll-gist'
+gem 'jekyll-paginate'
+gem 'jekyll-sitemap'
+gem 'jekyll-seo-tag'

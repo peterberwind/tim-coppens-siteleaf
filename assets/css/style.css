@@ -1,0 +1,487 @@
+/* Layout */
+
+body {
+    font: 10px 'Helvetica Neue',Helvetica,Verdana,sans-serif;
+    min-height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    /* Stickey Footer */
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.content, .contact {
+    padding: 0 150px;
+    font: 1.10em 'Helvetica Neue',Helvetica,Verdana,sans-serif;
+}
+
+.mid {
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    height: 345px;
+}
+
+.mid-top {
+    width: 100%;
+    height: 265px;
+}
+
+.wrapper {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 990px;
+    min-height: 100%;
+    height: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    box-sizing: border-box;
+}
+
+/* links */
+
+a:link {
+    text-decoration: none;
+    color: #9d9d9c;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #9d9d9c;
+}
+
+a:active {
+    text-decoration: none;
+    color: #1d1d1b;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #4C4C4C;
+    cursor: pointer;
+}
+
+li.current > a {
+    color: #1d1d1b;
+}
+
+:-moz-any-link:focus {
+    outline: none;
+}
+
+/* Header */
+
+.logo-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 361px;
+    height: 68px;
+    margin-left: -180px;
+    margin-top: -34px;
+    display: inline-block;
+    z-index: 10;
+}
+
+.logo {
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+/* menu */
+@media (max-width: 1200px) {
+    ul.nav .opened ul {
+        max-height: 260px;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1201px) {
+    ul.nav li:hover ul {
+        max-height: 260px;
+        opacity: 1;
+    }
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav li {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+ul.nav ul {
+    position: relative;
+    overflow: hidden;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    z-index: 1000;
+    max-height: 0px;
+    margin-left: 0;
+    margin-top: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #9d9d9c;
+    background-color: #fff;
+    opacity: 0;
+    vertical-align: top;
+
+    /*-ms-*/
+}
+
+ul.nav {
+    height: 20px;
+    margin-bottom: 40px;
+    list-style-type: none;
+}
+
+ul.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div.mid ul.nav li.level_0 {
+    display: inline;
+    border-top: 1px #9d9d9c dotted;
+
+    /*    float: left; */
+}
+
+ul.nav li a, ul.menuLinks li a {
+    padding: 2px 3px;
+    letter-spacing: 1px;
+}
+
+ul.menuLinks {
+    float: right;
+    height: 20px;
+    line-height: 150%;
+    list-style: none outside none;
+    margin-bottom: 40px;
+    text-align: right;
+    text-transform: uppercase;
+    top: -20px;
+}
+
+ul.menuLinks li.level_0 {
+    display: inline;
+    width: 150px;
+    margin-left: 15px;
+}
+
+/*li:hover ul, li.over ul {
+    display: block;
+}*/
+
+/* Home */
+
+.home__collections {
+    width: 100%;
+    padding-bottom: 5vh;
+}
+
+.wrapper.home .coverimage {
+    position: absolute;
+    right: 0;
+    max-height: 80%;
+    max-width: 95%;
+    width: auto;
+    z-index: 1;
+    display: none;
+}
+
+.home__grid {}
+
+.thumbs {
+    float: left;
+    width: 10%;
+    padding: 1px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+.featherlight .featherlight-content {
+    min-width: 0;
+}
+
+
+/*Colleections*/
+
+.collection-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Campaign Page */
+
+.campaign {
+    padding-bottom: 5vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.campaign .slider {
+    width: 100%;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+.campaign-link {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.campaign .details {
+    width: 45%;
+}
+
+.campaign .details img {
+    width: 50%;
+    padding: 20%;
+}
+
+.campaign .details p {
+    margin-bottom: 0;
+}
+
+.campaign-full {
+    padding-bottom: 10px;
+}
+
+/*Footer*/
+
+.social {
+    position: relative;
+}
+
+#datasocial {
+    margin-bottom: 0px;
+    width: 100px;
+    margin: auto;
+}
+
+.sociallist {
+    text-align: center;
+}
+
+ul.sociallist li {
+    /*float: left;*/
+    line-height: 22px;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.footerR {
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-size: 11px;
+}
+
+/* Stores / Stockist  */
+
+div.locator-column {
+    margin: 0;
+    padding: 0;
+    width: 33%;
+    float: left;
+    color: #BBB;
+    text-transform: uppercase;
+}
+
+div.locator-column ul,
+div.locator-column div {
+    display: none;
+    list-style: none;
+    margin: 0;
+}
+
+div.locator-column ul li,
+div.locator-column div p {
+    margin: 0.8em 0;
+    line-height: 150%;
+}
+
+div.locator-column a {
+    color: #BBB;
+    text-decoration: none;
+}
+
+div.locator-column a:hover,
+div.locator-column a.active {
+    color: #666;
+}
+
+#mc-embedded-subscribe-form h2 {
+    margin: 25px;
+}
+
+#mc-embedded-subscribe-form #mce-EMAIL {
+    margin-left: 25px;
+    width: 250px;
+}
+
+#mc-embedded-subscribe-form .mce-choise {
+    margin: 25px;
+}
+
+#mc-embedded-subscribe {
+    margin: 25px;
+}
+
+.mce-choise > li > label {
+    display: inline;
+}
+
+.mce-choise > li {
+    list-style-type: none;
+}
+
+#store-locator p {
+    border-left: 1px solid #F7F4F4;
+    font-size: 1em;
+    margin-bottom: 28px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+#fancybox-title-float-main {
+    text-align: center;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+#fancybox-title-float-wrap {
+    margin-top: 1em;
+}
+
+/* Responsive Media */
+
+@media screen and (max-width: 720px) {
+    .thumbs {
+        width: 20%;
+    }
+}
+
+/* Utility */
+
+.hidden {
+    display: none;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+/*
+
+What Are These?
+These should be removed are assigned
+
+ */
+
+.click {
+    cursor: pointer;
+    width: 1005;
+}
+
+.collections {
+    float: left;
+    vertical-align: middle;
+    width: 100%;
+    height: 345px;
+}
+
+a.sld-spring2012 img {
+    margin-bottom: 2px;
+}
+
+a.grid-1 {
+    margin-bottom: -1px;
+}
+
+#video {
+    left: 50%;
+    margin-left: -430px;
+    position: absolute;
+    top: 5%;
+    width: 860px;
+}
+
+a.thumb {
+    display: block;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    width: calc(10% - 1px);
+}
+
+.treskol {
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+}
+
+#data {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+}
+
+.vegas-loading {
+    /* Loading Gif by http://preloaders.net/ */
+
+    border-radius: 10px;
+    background: #000 url(../img/loading.gif) no-repeat center center;
+    background: rgba(0, 0, 0, 0.7) url(../img/loading.gif) no-repeat center center;
+    height: 32px;
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    width: 32px;
+    z-index: 0;
+}
+
+.vegas-background {
+    image-rendering: optimizeQuality;
+    -ms-interpolation-mode: bicubic;
+    z-index: -2;
+
+    /* counteracts global img modification by twitter bootstrap library */
+    max-width: none !important;
+}

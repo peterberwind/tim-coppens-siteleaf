@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+{% include head.html %}
+<body class="{{ page.body-class }}">
+  <div class="wrapper">
+  
+    <header>
+      <div class="logo">
+        <a href="/" id="logo">
+          <img alt="" src="/assets/images/TC_Logo.svg"/>
+        </a>
+      </div>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+      {% include navigation.html %}
 
-    </head>
-    <body>
+    </header>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+    <main class="page-content">
 
-          {{ content }}
+      {{ content }}
 
+    </main>
+  </div>
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name is<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+  {% include footer.html %}
 
-    </body>
+  <!-- JS -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="assets/js/jquery.fancybox-1.3.4.js"></script>
+  <script type="text/javascript" src="assets/js/slick.min.js"></script>
+  <script type="text/javascript" src="assets/js/tools.js"></script>
+
+  {% include analytics.html %}
+</body>
 </html>

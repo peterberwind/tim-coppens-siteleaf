@@ -51,13 +51,19 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
+gulp.task('copy', function () {
+    return gulp.src('assets/**/*')
+        .pipe(gulp.dest('_site/assets'));
+});
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    // gulp.watch('_scss/*.scss', ['sass']);
+    gulp.watch('assets/**/*', ['copy']);
+    gulp.watch(['*.html', '_layouts/*.html','_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**
