@@ -1,0 +1,7 @@
+---
+layout: default
+---
+
+{% for collection in site.collections %}
+  <img src="{{ collection.image_path }}" alt="{{ collection.type }}" />
+{% endfor %}

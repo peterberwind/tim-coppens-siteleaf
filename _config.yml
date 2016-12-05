@@ -23,6 +23,11 @@ lsi: false
 # Only make the last 10 posts so generating isn't slow
 limit_posts: 10
 
+# Collections Support
+collections:
+  - stores
+  - collections
+
 # Permalink structure and pagination options
 permalink: pretty
 paginate: 10
@@ -43,5 +48,3 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
-
-
