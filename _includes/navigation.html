@@ -1,22 +1,28 @@
 <ul class="nav">
-  <li class="level_0">
-    <a href="/biography ">
+  <li class="level_0 {% if page.current=='about' %} current {% endif %} ">
+    <a href="/biography">
       About
     </a>
   </li>
-  <li class="level_0">
-    <a href="/collections ">
+  <li class="level_0 {% if page.current=='collections' %} current {% endif %} ">
+    <a href="/collections">
       collections
     </a>
   </li>
-  <li class="level_0">
+  <li class="level_0 {% if page.current=='stores' %} current {% endif %} ">
     <a href="/shops">
       Stores
     </a>
   </li>
-  <li class="level_0">
+  <li class="level_0 {% if page.current=='blog' %} current {% endif %} ">
+    <a href="/blog">
+      Blog
+    </a>
+  </li>
+  <li class="level_0 {% if page.current=='contact' %} current {% endif %} ">
     <a href="/contact">
       Contact
     </a>
   </li>
 </ul>
+{% if active_nav=='about' %} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et debitis, impedit dolores optio magnam molestiae. Officia qui quisquam, doloribus ratione pariatur praesentium tempora aliquid harum earum, veniam itaque explicabo illo natus perspiciatis quia! Quas fugiat eum, aspernatur quibusdam tempora. Nostrum necessitatibus provident suscipit quisquam perferendis eos deserunt illo ducimus ab, quis voluptatum corporis et nisi consequuntur tempore molestias odit harum corrupti ad accusantium, nihil iste officiis doloremque! Eum quod facere, repellat quaerat iure earum, necessitatibus tenetur mollitia aspernatur porro corporis rem minus reiciendis, qui cupiditate delectus ad maxime vitae dolorum? Voluptatum adipisci iste soluta. Pariatur perferendis repellat, reprehenderit id itaque? {% endif %}

@@ -28,11 +28,10 @@ collections:
   - stores
   - collections
 
-# Permalink structure and pagination options
+# Pagination options
+paginate: 5
+paginate_path: '/blog/page:num/'
 permalink: pretty
-paginate: 10
-paginate_path: 'page:num'
-excerpt_separator: '<!--more-->'
 
 # Markdown library and options
 markdown: redcarpet
