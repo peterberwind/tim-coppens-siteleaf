@@ -51,7 +51,11 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
-
+gulp.task('css', function () {
+    return gulp.src('assets/css/**/*.css')
+        .pipe(gulp.dest('_site/assets/css'))
+        .pipe(browserSync.reload({stream:true}));
+});
 
 /**
  * Watch scss files for changes & recompile
@@ -59,7 +63,8 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     // gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html','_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch('assets/css/**/*.css', ['css']);
+    gulp.watch(['*.html', 'blog/*.html', '_layouts/*.html','_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**
