@@ -10,12 +10,11 @@ layout: default
     <div class="home__grid fade">
     {% for image in site.images %}
       {% for path in image.image_path  %}
-        <a href="#" class="thumbs" data-featherlight="{{ path }}"><img src="{{ path }}" alt=""/></a>
+        <a href="#" class="thumbs" data-featherlight="/{{path}}"><img src="/{{path}}" alt=""/></a>
       {% endfor %}
     {% endfor %}
   </div>
 </div>
-
 
 
 
