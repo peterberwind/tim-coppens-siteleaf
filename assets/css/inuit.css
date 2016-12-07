@@ -57,7 +57,7 @@ table{
 	border-collapse:collapse;
 	border-spacing:0;
 }
-fieldset,img{ 
+fieldset,img{
 	border:0;
 }
 address,caption,cite,dfn,th,var{
@@ -221,8 +221,8 @@ h6{
 
 /*--- PARAGRAPHS ---*/
 p, address {
-    font-size: 1.1em;
-    line-height: 140%;
+    font-size: 12px;
+    line-height: 180%;
     margin-bottom: 1.5em;
 }
 /*
@@ -529,7 +529,7 @@ Unfortunately feedback messages don’t fit the baseline all too well. Perhaps i
 	padding:10px 10px 10px 36px;
 	border:1px solid #ccc;
 	margin:0 0 1.5em 0;
-	
+
 	-moz-border-radius:2px;
 	-webkit-border-radius:2px;
 	border-radius:2px;
@@ -817,7 +817,7 @@ body{
 	margin:0 auto;
 }
 /*
-A list of things you don’t want printing. Add to/subtract from as necessary. 
+A list of things you don’t want printing. Add to/subtract from as necessary.
 */
 .nav,
 #footer{

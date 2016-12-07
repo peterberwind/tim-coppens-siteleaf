@@ -1,7 +1,8 @@
 /* Layout */
 
 body {
-    font: 14px 'Helvetica Neue',Helvetica,Verdana,sans-serif;
+    font: 12px 'Helvetica Neue',Helvetica,Verdana,sans-serif;
+    letter-spacing: 2px;
     min-height: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -19,7 +20,7 @@ body {
 
 .content, .contact {
     padding: 0 150px;
-    font: 1.10em 'Helvetica Neue',Helvetica,Verdana,sans-serif;
+    font: 12px 'Helvetica Neue',Helvetica,Verdana,sans-serif;
 }
 
 .wrapper {
@@ -171,7 +172,6 @@ div.mid ul.nav li.level_0 {
 
 ul.nav li a, ul.menuLinks li a {
     padding: 2px 3px;
-    letter-spacing: 1px;
 }
 
 ul.menuLinks {
