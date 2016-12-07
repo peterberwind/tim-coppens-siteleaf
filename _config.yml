@@ -26,7 +26,7 @@ limit_posts: 10
 # Collections Support
 collections:
   - stores
-  - collections
+  - images
 
 # Pagination options
 paginate: 5
