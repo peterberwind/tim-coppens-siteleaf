@@ -65,6 +65,9 @@ gulp.task('watch', function () {
     // gulp.watch('_scss/*.scss', ['sass']);
     gulp.watch('assets/css/**/*.css', ['css']);
     gulp.watch(['*.html', 'blog/*.html', '_layouts/*.html','_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
+
+    // Watch collections changes
+    gulp.watch(['_images/**/*'], ['jekyll-rebuild']);
 });
 
 /**
