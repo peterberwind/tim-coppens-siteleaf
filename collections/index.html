@@ -3,9 +3,15 @@ current: collections
 layout: default
 ---
 
-{% for item in site.collections %}
-  <p>Test</p>
-{% endfor %}
+<!-- Begin Collection Grid: FW16 -->
+<div class="collection-title">SS17</div>
+<div class="home__collections clearfix">
+    <div class="home__grid fade">
+    {% for image in site.images %}
+      <a href="#" class="thumbs" data-featherlight="{{ image.image_path }}"><img src="{{ image.image_path }}" alt=""/></a>
+    {% endfor %}
+  </div>
+</div>
 
 <!-- Begin Collection Grid: FW16 -->
 <div class="collection-title">FW16</div>
