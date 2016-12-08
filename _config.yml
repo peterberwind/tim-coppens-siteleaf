@@ -34,8 +34,7 @@ defaults:
     type: images
   values:
     title: "New image"
-    layout: default
-    date: '2011-12-07 00:00:00'
+    layout: post
 
 # Pagination options
 paginate: 5
