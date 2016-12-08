@@ -26,13 +26,13 @@ limit_posts: 10
 # Collections Support
 collections:
   - stores
-  - images
+  - collection_images
 
 
 defaults:
   - scope:
         path: ""
-        type: "images"
+        type: "collection_images"
     values:
         title: ""
         tag: ""
