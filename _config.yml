@@ -27,14 +27,9 @@ limit_posts: 10
 collections:
   - stores
   - images
+      image_path
 
-defaults:
-  scope:
-    path: ""
-    type: images
-  values:
-    title: "New image"
-    layout: post
+
 
 # Pagination options
 paginate: 5
