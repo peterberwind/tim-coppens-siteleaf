@@ -1,9 +1,9 @@
 ---
-current: blog
+current: editorial
 layout: default
 ---
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
+
+{% for post in site.posts %}
   {% if post.image.feature and post.image.feature != "" %}
     {% assign hasImage = true %}
     {% assign excerptClass = "col-xs-8" %}
@@ -11,7 +11,6 @@ layout: default
     {% assign hasImage = false %}
     {% assign excerptClass = "col-xs-12" %}
   {% endif %}
-
   <div class="post-preview">
     <div>
       <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -31,6 +30,19 @@ layout: default
     </div>
     <div class="text-right"><a href="{{ post.url }}">Read more &rarr;</a></div>
   </div>
+{% endfor %}
+
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  {% if post.image.feature and post.image.feature != "" %}
+    {% assign hasImage = true %}
+    {% assign excerptClass = "col-xs-8" %}
+  {% else %}
+    {% assign hasImage = false %}
+    {% assign excerptClass = "col-xs-12" %}
+  {% endif %}
+
+
 {% endfor %}
 
 <!-- Pagination links -->

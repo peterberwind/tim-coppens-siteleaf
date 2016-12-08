@@ -150,7 +150,7 @@ Your logo is an image, not a h1: http://csswizardry.com/2010/10/your-logo-is-an-
 #logo,
 #logo img{
 	display:block;
-	width:170px; /* Width of your logo in pixels (ideally a round grid-number) */
+	width:220px; /* Width of your logo in pixels (ideally a round grid-number) */
 	height:34px; /* Height of your logo in pixels */
       margin: 25px auto 0;
 }

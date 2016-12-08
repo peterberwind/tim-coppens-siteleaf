@@ -1,8 +1,16 @@
 /* Layout */
 
+@font-face {
+    font-family: 'letter_gothicregular';
+    src: url('../fonts/ufonts.com_letter-gothic-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts.com_letter-gothic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-    font: 12px 'Helvetica Neue',Helvetica,Verdana,sans-serif;
-    letter-spacing: 2px;
+    font: 11px 'letter_gothicregular',Helvetica,Verdana,sans-serif;
     min-height: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -120,6 +128,7 @@ li.current > a {
 
 .nav {
     text-align: center;
+    font-size: 12px;
 }
 
 .nav li {
