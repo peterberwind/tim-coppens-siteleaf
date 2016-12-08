@@ -29,12 +29,13 @@ collections:
   - images
 
 defaults:
-  - scope:
-      path: ""
-      type: images
-    values:
-      title: "New image"
-      layout: default
+  scope:
+    path: ""
+    type: images
+  values:
+    title: "New image"
+    layout: default
+    date: '2011-12-07 00:00:00'
 
 # Pagination options
 paginate: 5
