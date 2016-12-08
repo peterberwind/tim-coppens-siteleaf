@@ -8,9 +8,9 @@ layout: default
 <div class="collection-title">SS17 (test)</div>
 <div class="home__collections clearfix">
     <div class="home__grid fade">
-    {% for image in site.images %}
-      <a href="#" class="thumbs" data-featherlight="{{ image_path }}"><img src="{{ image_path }}" alt=""/></a>
-    {% endfor %}
+      {% for image in site.images %}
+        <a href="#" class="thumbs" data-featherlight="{{ image.image_path }}"><img src="{{ image.image_path }}" alt=""/></a>
+      {% endfor %}
   </div>
 </div>
 {% for col in site.collections  %}
