@@ -29,12 +29,12 @@ collections:
   - images
 
 defaults:
-  - scope:
-      path: ""
-      type: images
-    values:
-      title: "New image"
-      layout: post
+  scope:
+    path: ""
+    type: images
+  values:
+    title: "New image"
+    layout: default
 
 # Pagination options
 paginate: 5
