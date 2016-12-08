@@ -28,6 +28,13 @@ collections:
   - stores
   - images
 
+defaults:
+  scope: 
+    path: ""
+    type: images
+  values:
+    title: "New image"
+
 # Pagination options
 paginate: 5
 paginate_path: '/blog/page:num/'
