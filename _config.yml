@@ -25,9 +25,9 @@ limit_posts: 10
 
 # Collections Support
 collections:
-  - stores
-  - images
-      image_path
+  stores
+  images:
+    image_path:
 
 
 
