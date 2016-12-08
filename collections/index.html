@@ -3,23 +3,19 @@ title:
 current: collections
 layout: default
 ---
-<!-- push 05 -->
 <!-- Begin Collection Grid: FW16 -->
-<div class="collection-title">SS17 (test)</div>
+<div class="collection-title">SS17</div>
 <div class="home__collections clearfix">
     <div class="home__grid fade">
+      {% assign one = site.images | where:'ss17', images.tags %}
       {% for image in site.images %}
         <a href="#" class="thumbs" data-featherlight="{{ image.image_path }}"><img src="{{ image.image_path }}" alt=""/></a>
       {% endfor %}
   </div>
 </div>
-{% for col in site.collections  %}
-  <p>{{col.label}}</p>
+{% for tag in page.tag  %}
+  <p>{{tag}}</p>
 {% endfor %}
-
-
-
-
 
 
 
