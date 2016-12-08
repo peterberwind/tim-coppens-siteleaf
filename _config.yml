@@ -34,7 +34,7 @@ defaults:
     type: images
   values:
     title: "New image"
-    layout: default
+    layout: post
 
 # Pagination options
 paginate: 5
