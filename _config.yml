@@ -34,9 +34,9 @@ defaults:
         path: ""
         type: "images"
     values:
-        thumbnail: ""
-        categories: ""
-        description: ""
+        title: ""
+        tag: ""
+        image_path: ""
 
 
 # Pagination options
