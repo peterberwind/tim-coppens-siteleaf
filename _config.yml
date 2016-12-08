@@ -30,11 +30,13 @@ collections:
 
 
 defaults:
-  scope:
-    path: ""
-    type: "images"
-  values:
-    layout: "post"
+  - scope:
+        path: ""
+        type: images
+    values:
+        thumbnail: ""
+        categories: []
+        description: ""
 
 
 # Pagination options
