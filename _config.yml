@@ -29,6 +29,13 @@ collections:
   - images
 
 
+defaults:
+  scope:
+    path: ""
+    type: "images"
+  values:
+    layout: "post"
+
 
 # Pagination options
 paginate: 5
