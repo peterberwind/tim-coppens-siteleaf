@@ -32,10 +32,10 @@ collections:
 defaults:
   - scope:
         path: ""
-        type: images
+        type: "images"
     values:
         thumbnail: ""
-        categories: []
+        categories: ""
         description: ""
 
 
