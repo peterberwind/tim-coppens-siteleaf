@@ -7,9 +7,10 @@ layout: default
 <div class="collection-title">SS17</div>
 <div class="home__collections clearfix">
     <div class="home__grid fade">
-      {% assign one = site.collection_images | where:'ss17', images.tags %}
       {% for image in site.collection_images %}
-        <a href="#" class="thumbs" data-featherlight="{{ image.image_path }}"><img src="{{ image.image_path }}" alt=""/></a>
+        {% if image.tags contains 'ss17' %}
+          <a href="#" class="thumbs" data-featherlight="{{ image.image_path }}"><img src="{{ image.image_path }}" alt="{{ image.title }}"/></a>
+        {% endif %}
       {% endfor %}
   </div>
 </div>
