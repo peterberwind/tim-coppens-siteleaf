@@ -12,15 +12,15 @@ layout: default
     {% assign excerptClass = "col-xs-12" %}
   {% endif %}
   <div class="post-preview">
-    <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <div class="row">
       {% if hasImage %}
-      <div class="col col-xs-4">
-        <a href="{{ post.url }}"><img src="{{ site.baseurl }}{{ post.image.feature }}" alt="{{ post.title }}" class="feature-image img-responsive"></a>
+      <div class="col col-xs-12 feature-image ">
+        <img src="{{ site.baseurl }}{{ post.image.feature }}" alt="{{ post.title }}" class="img-responsive"></a>
       </div>
       {% endif %}
-      <div class="col {{excerptClass}}">
-        {{ post.excerpt }}
+      <div class="col col-xs-12 post-excerpt">
+        <h3 class="post-title">{{ post.title }}</h3>
+        <p>{{ post.excerpt }}</p>
       </div>
     </div>
   </div>
@@ -35,8 +35,6 @@ layout: default
     {% assign hasImage = false %}
     {% assign excerptClass = "col-xs-12" %}
   {% endif %}
-
-
 {% endfor %}
 
 <!-- Pagination links -->
