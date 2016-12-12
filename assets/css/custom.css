@@ -52,11 +52,17 @@
   padding-top: 20px;
 }
 
+.post-excerpt p {
+  font-size: 10px;
+  color: #9d9d9c;
+}
+
 .post-title {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #000;
 }
 
 .img-center {
