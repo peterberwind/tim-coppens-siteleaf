@@ -30,6 +30,10 @@ body {
     padding: 0 20px;
 }
 
+.content p {
+  padding-bottom: 10px;
+}
+
 .wrapper {
   margin: 0 auto;
   min-height: 100vh;
@@ -428,6 +432,15 @@ div.locator-column a.active {
 
     #store-locator p {
       padding: 0;
+    }
+
+    .nav {
+      font-size: 10px;
+
+    }
+
+    .nav li {
+      margin: 0;
     }
 }
 
