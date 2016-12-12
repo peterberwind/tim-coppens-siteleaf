@@ -49,8 +49,9 @@
   text-align: center;
   font-size: 12px;
 }
-.footer {
-  margin-top: 30px;
+
+.footer, .wrapper:after {
+  height: 10x;
 }
 
 .post-excerpt {

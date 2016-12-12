@@ -32,6 +32,13 @@ body {
 
 .wrapper {
   margin: 0 auto;
+  min-height: 100vh;
+  margin-bottom: -100px;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
 }
 
 .mid {
@@ -48,11 +55,8 @@ body {
 
 .wrapper {
     /*position: relative;*/
-    margin: auto;
     width: 80%;
     max-width: 880px;
-    min-height: 100%;
-    height: 100%;
     /*-webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
