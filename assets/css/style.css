@@ -12,22 +12,22 @@
 body {
     font: 11px 'letter_gothicregular',Helvetica,Verdana,sans-serif;
     min-height: 100%;
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    display: flex;*/
 
     /* Stickey Footer */
-    min-height: 100vh;
+    /*min-height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 
 .content, .contact {
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .wrapper {
@@ -47,16 +47,16 @@ body {
 }
 
 .wrapper {
-    position: relative;
+    /*position: relative;*/
     margin: auto;
     width: 80%;
     max-width: 880px;
     min-height: 100%;
     height: 100%;
-    -webkit-box-flex: 1;
+    /*-webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
+    flex: 1 0 auto;*/
     box-sizing: border-box;
 }
 
