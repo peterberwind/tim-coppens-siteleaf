@@ -25,7 +25,6 @@
 
 
 .post-preview {
-  border-bottom: 1px solid #ccc;
   padding: 15px 0;
 }
 .post-preview .author {
@@ -61,6 +60,7 @@
 .post-excerpt p {
   font-size: 10px;
   color: #9d9d9c;
+  text-align: center;
 }
 
 .post-title {
