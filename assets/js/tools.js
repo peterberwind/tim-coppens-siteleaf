@@ -3,35 +3,35 @@
  $(document).ready(function() {
 
      /****/
-     if ($('.level_1').hasClass('current')) {
-         $('.level_1.current').parent().parent().addClass('current');
-     }
-
-     hasChildLink = $('.nav').find('ul').prev();
-
-
-     hasChildLink.on('click', function() {
-         if ($(window).innerWidth() < 1200) {
-
-             hasChildLink.parent().toggleClass('opened');
-             return false;
-         }
-     })
-
-     $('.site').on('click', function() {
-         hasChildLink.parent().removeClass('opened');
-     })
+    //  if ($('.level_1').hasClass('current')) {
+    //      $('.level_1.current').parent().parent().addClass('current');
+    //  }
+     //
+    //  hasChildLink = $('.nav').find('ul').prev();
+     //
+     //
+    //  hasChildLink.on('click', function() {
+    //      if ($(window).innerWidth() < 1200) {
+     //
+    //          hasChildLink.parent().toggleClass('opened');
+    //          return false;
+    //      }
+    //  })
+     //
+    //  $('.site').on('click', function() {
+    //      hasChildLink.parent().removeClass('opened');
+    //  })
 
      /******** slideshow springsummer2012 ***********/
 
-     $(".sld-spring2012").fancybox({
-         'padding': 0,
-         'transitionIn': 'fade',
-         'transitionOut': 'fade',
-         'titlePosition': 'inside',
-         'type': 'image',
-         'changeFade': 150
-     });
+    //  $(".sld-spring2012").fancybox({
+    //      'padding': 0,
+    //      'transitionIn': 'fade',
+    //      'transitionOut': 'fade',
+    //      'titlePosition': 'inside',
+    //      'type': 'image',
+    //      'changeFade': 150
+    //  });
 
 
      /********  overlay voor de beelden  ***********/
@@ -48,41 +48,41 @@
 
 
      // verberg het icoon indien bekeken met mobile device
-     if (screen.height <= 768) {
-         $('#social').hide();
-     }
+    //  if (screen.height <= 768) {
+    //      $('#social').hide();
+    //  }
 
 
      // wijzig de klasse van het tweede menu
-     $('ul.nav:nth-child(3)').removeClass('nav').addClass('menuLinks');
+    //  $('ul.nav:nth-child(3)').removeClass('nav').addClass('menuLinks');
 
 
-     // Slideshow beelden collectie        
-     $("a.thumbs").click(function(e) {
-         e.preventDefault();
-         $("a[rel=slideshow]").eq($(this).data('index')).trigger('click');
-     });
+     // Slideshow beelden collectie
+    //  $("a.thumbs").click(function(e) {
+    //      e.preventDefault();
+    //      $("a[rel=slideshow]").eq($(this).data('index')).trigger('click');
+    //  });
 
 
-     $("a[rel=slideshow]").fancybox({
-         'padding': 0,
-         'transitionIn': 'fade',
-         'transitionOut': 'fade',
-         'titlePosition': 'inside',
-         'type': 'image',
-         'changeFade': 150
-     });
+    //  $("a[rel=slideshow]").fancybox({
+    //      'padding': 0,
+    //      'transitionIn': 'fade',
+    //      'transitionOut': 'fade',
+    //      'titlePosition': 'inside',
+    //      'type': 'image',
+    //      'changeFade': 150
+    //  });
 
-     $(".mailchimpfire").fancybox({
-         'titlePosition': 'inside',
-         'transitionIn': 'fade',
-         'autoDimensions': false,
-         'hideOnContentClick': false,
-         'type': 'inline',
-         'width': '330',
-         'height': '330',
-         'autoSize': false
-     });
+    //  $(".mailchimpfire").fancybox({
+    //      'titlePosition': 'inside',
+    //      'transitionIn': 'fade',
+    //      'autoDimensions': false,
+    //      'hideOnContentClick': false,
+    //      'type': 'inline',
+    //      'width': '330',
+    //      'height': '330',
+    //      'autoSize': false
+    //  });
 
 
      // change campaign img on click
