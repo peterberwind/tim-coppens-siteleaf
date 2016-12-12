@@ -19,6 +19,18 @@ layout: default
 <div class="collection-title">FW16</div>
 <div class="home__collections clearfix">
     <div class="home__grid fade">
+      {% for image in site.collection_images %}
+        {% if image.tags contains 'fw16' %}
+          <a href="#" class="thumbs" data-featherlight="{{ image.image_path }}"><img src="{{ image.image_path }}" alt="{{ image.title }}"/></a>
+        {% endif %}
+      {% endfor %}
+  </div>
+</div>
+
+<!-- Begin Collection Grid: FW16 -->
+<!-- <div class="collection-title">FW16</div>
+<div class="home__collections clearfix">
+    <div class="home__grid fade">
         <a href="#" class="thumbs" data-featherlight="/assets/images/fw16/lg/fw16.jpg"><img src="/assets/images/fw16/sm/fw16.jpg" alt=""/></a>
         <a href="#" class="thumbs" data-featherlight="/assets/images/fw16/lg/fw16-2.jpg"><img src="/assets/images/fw16/sm/fw16-2.jpg" alt=""/></a>
         <a href="#" class="thumbs" data-featherlight="/assets/images/fw16/lg/fw16-3.jpg"><img src="/assets/images/fw16/sm/fw16-3.jpg" alt=""/></a>
@@ -56,7 +68,7 @@ layout: default
         <a href="#" class="thumbs" data-featherlight="/assets/images/fw16/lg/fw16-37.jpg"><img src="/assets/images/fw16/sm/fw16-37.jpg" alt=""/></a>
         <a href="#" class="thumbs" data-featherlight="/assets/images/fw16/lg/fw16-38.jpg"><img src="/assets/images/fw16/sm/fw16-38.jpg" alt=""/></a>
     </div>
-</div>
+</div> -->
 
 
 <!-- Begin Collection Grid: SS16 -->
