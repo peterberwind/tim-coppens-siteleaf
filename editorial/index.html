@@ -3,7 +3,7 @@ current: editorial
 layout: default
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   {% if post.image.feature and post.image.feature != "" %}
     {% assign hasImage = true %}
     {% assign excerptClass = "col-xs-8" %}
@@ -27,7 +27,7 @@ layout: default
 {% endfor %}
 
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
+<!-- {% for post in paginator.posts %}
   {% if post.image.feature and post.image.feature != "" %}
     {% assign hasImage = true %}
     {% assign excerptClass = "col-xs-8" %}
@@ -35,7 +35,7 @@ layout: default
     {% assign hasImage = false %}
     {% assign excerptClass = "col-xs-12" %}
   {% endif %}
-{% endfor %}
+{% endfor %} -->
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}

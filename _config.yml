@@ -41,7 +41,7 @@ defaults:
 
 # Pagination options
 paginate: 5
-paginate_path: '/blog/page:num/'
+paginate_path: '/editorial/page:num/'
 permalink: pretty
 excerpt_separator: '<!--more-->'
 
