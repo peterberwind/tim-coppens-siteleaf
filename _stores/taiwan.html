@@ -1,0 +1,36 @@
+---
+continent: asia
+country: china
+---
+<li>
+  <p>
+     IT<br/>
+     HONG KONG<br/>
+     <a href="https://ithk.com/eng/html/brands/TIM_COPPENS" target="_blank">WWW.ITHK.COM</a>
+  </p>
+  <p>
+     LANE CRAWFORD<br/>
+     BEIJING<br/>
+     <a href="http://www.lanecrawford.com/tim-coppens/_/38200001/men/designers.lc" target="_blank">WWW.LANECRAWFORD.COM</a>
+  </p>
+  <p>
+     LANE CRAWFORD<br/>
+     HONG KONG<br/>
+     <a href="http://www.lanecrawford.com/tim-coppens/_/38200001/men/designers.lc" target="_blank">WWW.LANECRAWFORD.COM</a>
+  </p>
+  <p>
+     LANE CRAWFORD<br/>
+     SHANGHAI<br/>
+     <a href="http://www.lanecrawford.com/tim-coppens/_/38200001/men/designers.lc" target="_blank">WWW.LANECRAWFORD.COM</a>
+  </p>
+  <p>
+     PROJECT AEGIS<br/>
+     SHANGHAI<br/>
+     <a href="http://www.projectaegis.com/" target="_blank">WWW.PROJECTAEGIS.COM</a>
+  </p>
+  <p>
+     SKP<br/>
+     BEIJING<br/>
+     <a href="http://www.skp-beijing.com">www.skp-beijing.com</a>
+  </p>
+</li>
