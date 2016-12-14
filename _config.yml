@@ -1,61 +1,63 @@
-# Title, decription, tagline and URL for your site
-# Can be used in your theme by calling 'site.title' and so on
+---
 title: Tim Coppens
-description:
-url:
-exclude: ["node_modules", "gulpfile.js", "package.json"]
-
-# Same as the title etc for your site but can instead be
-# called by using 'site.author.name' and so on
-# NOTE: Don't use @ in front of your Twitter username
+timezone: UTC
+collections:
+  collection_images:
+    title: Collection Images
+    output: false
+  posts:
+    title: Posts
+    output: true
+  stores:
+    title: Stores
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: collection_images
+  values:
+    title: ''
+    tag: ''
+    image_path: ''
+description: 
+url: 
+exclude:
+- node_modules
+- gulpfile.js
+- package.json
 author:
   name: Half Helix
   email: hello@halfhelix.com
-  twitter:
-  github:
-
-# _config.build.yml overwrites these options when you run `gulp build`
-# Enables future posts (posts with dates in the future) and drafts
+  twitter: 
+  github: 
 future: true
 show_drafts: true
-# Disables the more accurate related posts for faster generating of the site
 lsi: false
-# Only make the last 10 posts so generating isn't slow
 limit_posts: 10
-
-# Collections Support
-collections:
-  - stores
-  - collection_images
-
-
-defaults:
-  - scope:
-        path: ""
-        type: "collection_images"
-    values:
-        title: ""
-        tag: ""
-        image_path: ""
-
-
-# Pagination options
 paginate: 5
-paginate_path: '/editorial/page:num/'
+paginate_path: "/editorial/page:num/"
 permalink: pretty
-excerpt_separator: '<!--more-->'
-
-# Markdown library and options
+excerpt_separator: "<!--more-->"
 markdown: redcarpet
 redcarpet:
-  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
-              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
+  extensions:
+  - no_intra_emphasis
+  - tables
+  - fenced_code_blocks
+  - autolink
+  - smart
+  - strikethrough
+  - superscript
+  - underline
+  - highlight
+  - footnotes
 highlighter: true
-
-# Extending Jekyll
 gems:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
+- jekyll-feed
+- jekyll-gist
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-seo-tag
