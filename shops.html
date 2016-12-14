@@ -50,7 +50,12 @@ layout: default
          </div>
          <!-- Actual Shops Here -->
          <div id="shop" class="locator-column">
-            <ul id="content-china">
+             {% for country in site.stores %}
+                <ul id="content-{{ country.country }}">
+                  {{ country.excerpt }}
+              </ul>
+             {% endfor %}
+            <!-- <ul id="content-china">
                <li>
                   <p>
                      IT<br/>
@@ -83,7 +88,7 @@ layout: default
                      <a href="http://www.skp-beijing.com">www.skp-beijing.com</a>
                   </p>
                </li>
-            </ul>
+            </ul> -->
             <ul id="content-singapore">
                <li>
                   <p>
@@ -169,7 +174,7 @@ layout: default
                      BARNEYS NEW YORK<br/>
                      NEW YORK, NY<br/>
                      <a href="http://www.barneys.com/barneys-new-york/men?pagetype=brand&prefn1=brand&prefv1=Tim%20Coppens" target="_blank">www.barneys.com</a>
-                  </p>                  
+                  </p>
                   <p>
                      BARNEYS PHILADELPHIA<br/>
                      PHILADELPHIA, PA<br />
@@ -208,7 +213,7 @@ layout: default
                      KITH<br/>
                      NEW YORK, NY<br/>
                      <a href="https://kithnyc.com/" target="_blank">www.kithnyc.com</a>
-                  </p>                  
+                  </p>
                   <p>
                      KOI<br/>
                      HONOLULU, HI<br/>
